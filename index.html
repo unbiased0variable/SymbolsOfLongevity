@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Concert Registration</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="wrapper">  
+
+            <!-- HEADING ------------------------------------------------------------------ -->
+
+            <div class="heading">
+                <h1>REGISTER NOW!</h1>
+                <h4>For the biggest music festival! Hurry now!</h4>
+            </div>              
+            
+            <!-- FORM ------------------------------------------------------------------ -->
+
+            <div class="main-content">
+                <form method="POST" class="register-form" id="register-form">
+                    <div class="form-input">
+                        <label for="first-name">First Name</label>  
+                        <input class="input fname" type="text" name="first-name" placeholder="e.g. George" id="first-name"> 
+                    </div>
+                        
+                    <div class="form-input">
+                        <label for="last-name">Last Name</label>
+                        <input class="input lname" type="text" name="last-name" placeholder="e.g. Lennon" id="last-name">
+                    </div>
+
+                    <div class="form-input">
+                        <label for="mail">Email</label>
+                        <input class="input e-mail" type="email" name="email" placeholder="abc@domain.com" id="mail">
+                    </div>
+                    
+                    <div class="form-input"> 
+                        <label for="phone-number">Phone number</label>
+                        <input class="input phnumber" type="text" name="phone-number" placeholder="+00 0000 000 0000" id="phone-number">
+                    </div>
+                    
+                    <div class="form-input">
+                        <label for="meal-preference">Meal Preference</label>
+
+                        <select class="input correction" name="meal-preference" id="meal-preference">
+                            <option class="correction" value="Vegetarian">Vegetarian</option>
+                            <option class="correction" value="Non-Vegetarian">Non-Vegetarian</option>                        
+                        </select>
+                    </div>
+
+                    <div class="form-input">
+                        <label>Payment Mode</label>
+                    
+                        <input class="input r-btn" type="radio" name="payment" id="cash" checked>
+                        <label for="cash">Cash</label>
+
+                        <input class="input r-btn" type="radio" name="payment" id="cheque" >
+                        <label for="cheque">Cheque</label>
+
+                        <input class="input r-btn" type="radio" name="payment" id="online">
+                        <label for="online">Online</label>
+                    </div>
+
+                    <div class="form-input">
+                        <input class="input btn submit-btn" type="submit" value="SUBMIT" id="submit" name="submit">
+                        <input class="input btn" type="reset" value="RESET" id="reset" name="reset">
+                    </div> 
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
